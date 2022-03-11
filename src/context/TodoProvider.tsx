@@ -17,7 +17,6 @@ const initialState: TodoState = {
 			isCompleted: false
 		}
 	],
-	completed: 0,
 	pending: 2
 };
 
