@@ -13,7 +13,7 @@ const TodoItem = ({ todo }: props) => {
 
 	return (
 		<section className="todo__element">
-			{console.log(todo)}
+			{/*console.log(todo)*/}
 			<li
 				style={{
 					textDecoration: todo.isCompleted

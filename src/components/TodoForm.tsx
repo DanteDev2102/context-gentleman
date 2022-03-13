@@ -4,8 +4,9 @@ import useTodo from '../hooks/useTodo';
 const TodoForm = () => {
 	const { addTodo } = useTodo();
 	const [description, setDescription] = useState('');
-	const handleChange = (e: any) => {
-		setDescription(e.target.value);
+	const handleChange = (e: ChangeEvent<HTMLInputElement>) => {
+		const newValue: string = e.target.value;
+		setDescription(newValue);
 	};
 	const handleClick = () => {
 		addTodo(description);
